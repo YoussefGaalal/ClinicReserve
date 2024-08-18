@@ -23,7 +23,7 @@ namespace ClinicsReservation.Controllers
         }
 
         // GET: api/<ClinicDoctorController>
-        [HttpGet]
+       /* [HttpGet]
         public async Task<IActionResult> GetAllClinicDoctors()
         {
             var clinicDoctors = await _context.ClinicDoctors.ToListAsync();
@@ -34,7 +34,7 @@ namespace ClinicsReservation.Controllers
             }
 
             return Ok(clinicDoctors);
-        }
+        } */
 
         // GET api/<ClinicDoctorController>/clinic/5/doctor/10
         [HttpGet("clinic/{clinicId}")]
@@ -49,7 +49,7 @@ namespace ClinicsReservation.Controllers
                 .Where(cd => cd.ClinicId == clinicId )
                 .Select(cd => cd.Doctor).ToListAsync(); // multiple dr per clinic
 
-            if (clinicDoctor == null)
+            if (clinicDoctor.Count() <=0)
             {
                 return NotFound($"No Doctors found in Clinic ID: {clinicId} ");
             }
@@ -68,7 +68,7 @@ namespace ClinicsReservation.Controllers
                 .Where(dc => dc.DoctorId == doctorId)
                 .Select(dc => dc.Clinic).ToListAsync(); // multiple clinic w/ dr
 
-            if (clinicDoctor.Count()>= 0)
+            if (clinicDoctor.Count()<= 0)
             {
                 return NotFound($"No Clinics found for this Doctor {DrCheck.FirstName+" "+ DrCheck.LastName} ");
             }

@@ -89,7 +89,7 @@ namespace ClinicsReservation.Controllers
             _context.Entry(doctor).CurrentValues.SetValues(doctorCommand); 
             _context.SaveChanges();
 
-            return Ok(doctor);
+            return Ok(_mapper.Map<DoctorDto>(doctor));
 
         }
 

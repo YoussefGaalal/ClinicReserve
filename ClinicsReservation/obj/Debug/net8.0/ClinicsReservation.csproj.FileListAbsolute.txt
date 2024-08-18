@@ -137,3 +137,4 @@ C:\Users\ygala\source\repos\ClinicsReservation\ClinicsReservation\bin\Debug\net8
 C:\Users\ygala\source\repos\ClinicsReservation\ClinicsReservation\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ygala\source\repos\ClinicsReservation\ClinicsReservation\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\ygala\source\repos\ClinicsReservation\ClinicsReservation\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ygala\source\repos\ClinicsReservation\ClinicsReservation\obj\Debug\net8.0\ClinicsReservation.sourcelink.json
