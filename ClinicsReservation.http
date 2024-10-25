@@ -1,0 +1,6 @@
+@ClinicsReservation_HostAddress = http://localhost:5195
+
+GET {{ClinicsReservation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
